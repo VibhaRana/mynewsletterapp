@@ -60,6 +60,9 @@ request.write(jsonData)
 request.end()
 
 })
+app.post('/failure', function(req, res){
+    res.redirect('/')
+})
 
 
 app.listen(4000, function(){
